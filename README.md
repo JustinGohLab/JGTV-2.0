@@ -1,4 +1,4 @@
-# MoonTV
+# JGTV
 
 <div align="center">
   <img src="public/logo.png" alt="JGTV Logo" width="120">
