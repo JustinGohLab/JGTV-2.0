@@ -202,7 +202,7 @@ async function initConfig() {
             ImageProxy: process.env.NEXT_PUBLIC_IMAGE_PROXY || '',
             DoubanProxy: process.env.NEXT_PUBLIC_DOUBAN_PROXY || '',
             DisableYellowFilter:
-              process.env.NEXT_PUBLIC_DISABLE_YELLOW_FILTER === 'false',
+              process.env.NEXT_PUBLIC_DISABLE_YELLOW_FILTER === 'true',
           },
           UserConfig: {
             AllowRegister: process.env.NEXT_PUBLIC_ENABLE_REGISTER === 'true',
@@ -439,7 +439,7 @@ export async function resetConfig() {
       ImageProxy: process.env.NEXT_PUBLIC_IMAGE_PROXY || '',
       DoubanProxy: process.env.NEXT_PUBLIC_DOUBAN_PROXY || '',
       DisableYellowFilter:
-        process.env.NEXT_PUBLIC_DISABLE_YELLOW_FILTER === 'false',
+        process.env.NEXT_PUBLIC_DISABLE_YELLOW_FILTER === 'true',
     },
     UserConfig: {
       AllowRegister: process.env.NEXT_PUBLIC_ENABLE_REGISTER === 'true',
