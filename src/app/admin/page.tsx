@@ -1649,7 +1649,7 @@ const SiteConfigComponent = ({ config }: { config: AdminConfig | null }) => {
                 ? 'bg-green-600'
                 : 'bg-gray-200 dark:bg-gray-700'
             } ${
-              isD1Storage || isUpstashStorage
+              isD1Storage && isUpstashStorage
                 ? 'opacity-50 cursor-not-allowed'
                 : ''
             }`}
