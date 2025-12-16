@@ -249,7 +249,7 @@
   --color-primary-950: rgb(var(--tw-color-primary-950)); /* #1a2e05 */
 }
 
-.green {
+.gold-brown {
   --tw-color-primary-50: 240 253 244;
   --tw-color-primary-100: 220 252 231;
   --tw-color-primary-200: 187 247 208;
@@ -272,6 +272,31 @@
   --color-primary-800: rgb(var(--tw-color-primary-800)); /* #166534 */
   --color-primary-900: rgb(var(--tw-color-primary-900)); /* #14532d */
   --color-primary-950: rgb(var(--tw-color-primary-950)); /* #052e16 */
+}
+
+.green {
+  --tw-color-primary-50: 255 239 210;
+  --tw-color-primary-100: 255 223 145;
+  --tw-color-primary-200: 255 195 89;
+  --tw-color-primary-300: 255 160 30;
+  --tw-color-primary-400: 223 124 5;
+  --tw-color-primary-500: 191 92 0;
+  --tw-color-primary-600: 153 74 0;
+  --tw-color-primary-700: 121 59 0;
+  --tw-color-primary-800: 96 46 0;
+  --tw-color-primary-900: 68 30 0;
+  --tw-color-primary-950: 42 18 0;
+  --color-primary-50: rgb(var(--tw-color-primary-50)); /* #ffeed2 */
+  --color-primary-100: rgb(var(--tw-color-primary-100)); /* #ffdf91 */
+  --color-primary-200: rgb(var(--tw-color-primary-200)); /* #ffc359 */
+  --color-primary-300: rgb(var(--tw-color-primary-300)); /* #ffa01e */
+  --color-primary-400: rgb(var(--tw-color-primary-400)); /* #df7c05 */
+  --color-primary-500: rgb(var(--tw-color-primary-500)); /* #bf5c00 */
+  --color-primary-600: rgb(var(--tw-color-primary-600)); /* #994a00 */
+  --color-primary-700: rgb(var(--tw-color-primary-700)); /* #793b00 */
+  --color-primary-800: rgb(var(--tw-color-primary-800)); /* #602e00 */
+  --color-primary-900: rgb(var(--tw-color-primary-900)); /* #442000 */
+  --color-primary-950: rgb(var(--tw-color-primary-950)); /* #2a1200 */
 }
 
 .emerald {
