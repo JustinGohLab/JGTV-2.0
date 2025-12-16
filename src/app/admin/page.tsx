@@ -1617,9 +1617,7 @@ const SiteConfigComponent = ({ config }: { config: AdminConfig | null }) => {
       <div>
         <div className='flex items-center justify-between'>
           <label
-            className={`block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2 ${
-              isD1Storage || isUpstashStorage ? 'opacity-50' : ''
-            }`}
+            className={`block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2`}
           >
             禁用黄色过滤器
             {isD1Storage && (
@@ -1648,10 +1646,6 @@ const SiteConfigComponent = ({ config }: { config: AdminConfig | null }) => {
               siteSettings.DisableYellowFilter
                 ? 'bg-green-600'
                 : 'bg-gray-200 dark:bg-gray-700'
-            } ${
-              isD1Storage && isUpstashStorage
-                ? 'opacity-50 cursor-not-allowed'
-                : ''
             }`}
           >
             <span
