@@ -1640,7 +1640,7 @@ const SiteConfigComponent = ({ config }: { config: AdminConfig | null }) => {
               !isUpstashStorage &&
               setSiteSettings((prev) => ({
                 ...prev,
-                DisableYellowFilter: !prev.DisableYellowFilter,
+                DisableYellowFilter: false,
               }))
             }
             disabled={isD1Storage || isUpstashStorage}
