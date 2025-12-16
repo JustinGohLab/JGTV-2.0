@@ -334,7 +334,7 @@ const UserConfig = ({ config, role, refreshConfig }: UserConfigProps) => {
               !isUpstashStorage &&
               toggleAllowRegister(!userSettings.enableRegistration)
             }
-            disabled={isD1Storage || isUpstashStorage}
+            disabled=false
             className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 ${
               userSettings.enableRegistration
                 ? 'bg-green-600'
@@ -1175,7 +1175,7 @@ const CategoryConfig = ({
               !isUpstashStorage &&
               handleToggleEnable(category.query, category.type)
             }
-            disabled={isD1Storage || isUpstashStorage}
+            disabled=false
             className={`inline-flex items-center px-3 py-1.5 rounded-full text-xs font-medium ${
               isD1Storage || isUpstashStorage
                 ? 'bg-gray-400 cursor-not-allowed text-white'
@@ -1228,7 +1228,7 @@ const CategoryConfig = ({
           onClick={() =>
             !isD1Storage && !isUpstashStorage && setShowAddForm(!showAddForm)
           }
-          disabled={isD1Storage || isUpstashStorage}
+          disabled=false
           className={`px-3 py-1 text-sm rounded-lg transition-colors ${
             isD1Storage || isUpstashStorage
               ? 'bg-gray-400 cursor-not-allowed text-white'
@@ -1441,7 +1441,7 @@ const SiteConfigComponent = ({ config }: { config: AdminConfig | null }) => {
             !isUpstashStorage &&
             setSiteSettings((prev) => ({ ...prev, SiteName: e.target.value }))
           }
-          disabled={isD1Storage || isUpstashStorage}
+          disabled=false
           className={`w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-green-500 focus:border-transparent ${
             isD1Storage || isUpstashStorage
               ? 'opacity-50 cursor-not-allowed'
@@ -1479,7 +1479,7 @@ const SiteConfigComponent = ({ config }: { config: AdminConfig | null }) => {
               Announcement: e.target.value,
             }))
           }
-          disabled={isD1Storage || isUpstashStorage}
+          disabled=false
           rows={3}
           className={`w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-green-500 focus:border-transparent ${
             isD1Storage || isUpstashStorage
@@ -1558,7 +1558,7 @@ const SiteConfigComponent = ({ config }: { config: AdminConfig | null }) => {
               ImageProxy: e.target.value,
             }))
           }
-          disabled={isD1Storage || isUpstashStorage}
+          disabled=false
           className={`w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-green-500 focus:border-transparent ${
             isD1Storage || isUpstashStorage
               ? 'opacity-50 cursor-not-allowed'
@@ -1601,7 +1601,7 @@ const SiteConfigComponent = ({ config }: { config: AdminConfig | null }) => {
               DoubanProxy: e.target.value,
             }))
           }
-          disabled={isD1Storage || isUpstashStorage}
+          disabled=false
           className={`w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-green-500 focus:border-transparent ${
             isD1Storage || isUpstashStorage
               ? 'opacity-50 cursor-not-allowed'
@@ -1640,10 +1640,10 @@ const SiteConfigComponent = ({ config }: { config: AdminConfig | null }) => {
               !isUpstashStorage &&
               setSiteSettings((prev) => ({
                 ...prev,
-                DisableYellowFilter: false,
+                DisableYellowFilter: !prev.DisableYellowFilter,
               }))
             }
-            disabled={isD1Storage || isUpstashStorage}
+            disabled=false
             className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 ${
               siteSettings.DisableYellowFilter
                 ? 'bg-green-600'
